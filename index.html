@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700;800&family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Online Marketing</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-light fixed-top py-3" id="mainNav">
+      <div class="container fw-bold">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#protfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".navbar").addClass("shrink");
+        } else {
+          $(".navbar").removeClass("shrink");
+        }
+      });
+    </script>
+    <header class="py-5">
+      <div class="container py-5 px-5">
+        <div
+          class="row justify-content-center align-items-center text-center py-5"
+        >
+          <div class="col-lg-8 py-5">
+            <h1 class="text-white pt-5 text-uppercase">
+          we are online marketing  webinar
+            </h1>
+            <hr />
+            <p class="px-5 mb-5">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellendus natus totam repellat cum quia.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg rounded-5"
+              >find out more</a
+            >
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </header>
+
+    <section class="about" id="about">
+      <div class="container py-5">
+        <div
+          class="row justify-content-center align-items-center text-center py-4"
+        >
+          <div class="col-lg-8">
+            <h2 class="pt-5 fw-light text-white">We've got what you need!</h2>
+            <hr class="bg-light" />
+            <p class="px-5 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt rem laudantium, laboriosam eaque pariatur earum eveniet a libero odio cumque, qui, quae animi vitae.
+            </p>
+            <a href="#services" class="btn btn-light btn-lg rounded-5"
+              >get started!</a
+            >
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- about -->
+    <section class="py-2" id="services">
+      <div class="container py-5">
+        <h2 class="text-center pt-5">At Your Service</h2>
+        <hr />
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3>Digital Marketing </h3>
+            <p class="text-muted fs-5">
+              Video,Email and Prodcast Marketing,Music Promotion
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3>Search Marketing</h3>
+            <p class="text-muted fs-5">
+              SEO,Search Engine Marketing, Web Traffic Optimization
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3>Analytics & Strategy</h3>
+            <p class="text-muted fs-5">
+              Market Research,Marketing Strategy, Web Analytics
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3>Made with Love</h3>
+            <p class="text-muted fs-5">
+              Is it really open source if it's not made with love?
+            </p>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- services -->
+    <section id="protfolio">
+      <div class="row">
+        <script>
+          for (i = 1; i <= 6; i++) {
+            document.write(`<div class="col-lg-4 col-md-6 px-0">
+                <div class="overlay">
+              
+                  <div>
+                    <img src="images/${i}.jpg" alt="" style="width: 100%;">
+                  </div>
+                  
+                  <div class="overlay-content py-5">
+                    <div class="py-5">
+                      <h5 class="text-white-50 text-uppercase pt-3">Category</h5>
+                      <p class="">Project Name</p>
+                    </div>
+                  </div>
+                </div><!-- overlay -->
+              </div>
+              
+              `);
+          }
+        </script>
+      </div>
+      <!-- row -->
+    </section>
+    <!-- images -->
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container py-5">
+        <h2 class="py-4">Free Download at Google Play</h2>
+        <a href="#" class="btn btn-light btn-lg rounded-5">Download now!</a>
+      </div>
+    </section>
+    <!-- download -->
+    <section class="py-5" id="contact">
+      <div class="container py-5">
+        <div
+          class="row justify-content-center align-items-center text-center py-4"
+        >
+          <div class="col-lg-6">
+            <h2 class="pt-5">Let's Get In Touch!</h2>
+            <hr />
+            <p class="text-muted fs-5">
+              Ready to start your next project with us? Send us a messages and
+              we will get back to you as soon as possible!
+            </p>
+            <form>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control my-2 form-control-lg"
+                    id="inputEmail3"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input
+                    type="email"
+                    class="form-control my-2 form-control-lg"
+                    id="inputEmail3"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input
+                    type="number"
+                    class="form-control form-control-lg my-2"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <textarea
+                  class="form-control my-2"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <a
+                href="#"
+                class="btn btn-secondary rounded-5 btn-lg w-100 disabled mb-5"
+                style="background-color: #f4623a"
+                >submit</a
+              >
+            </form>
+            <p class="text-center text-black">+01010155863</p>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- form -->
+    <footer class="text-dark text-center pb-5 text-muted">
+      Copyright © 2023 - Company Name
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
